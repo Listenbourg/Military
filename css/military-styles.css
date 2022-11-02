@@ -1,4 +1,4 @@
-﻿/*
+/*
 Military v2.0
 Released: July 2012
 ThemeKings Military V2.0
@@ -23,7 +23,7 @@ body {
 	background-color: #353524;
 }
 #banner {
-	background-image: url('../theme/banner-blank.jpg');
+	background-image: url('../theme/banner-republic.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	padding: 0px;
@@ -320,7 +320,7 @@ a.pl:hover {
 	font-size: 80%;
 	color: #c4b470;
 	width: 90%;
-	height: 14px;
+	height: 2rem;
 	position: relative;
 	font-style: italic;
 }
