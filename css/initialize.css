@@ -1,0 +1,264 @@
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+header {
+  z-index: 90;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #1D1F22;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#hUl {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#huLiLogo {
+  display: flex;
+  width: 300px;
+  height: 100%;
+}
+
+#hullLogo {
+  margin: auto;
+  width: auto;
+  height: 80px;
+}
+
+#huLiTabs {
+  display: flex;
+  width: calc(100% - 300px - 100px);
+  height: 100%;
+}
+
+#hultUl {
+  margin: auto auto auto 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#hultUl li {
+  display: flex;
+  margin: auto 25px;
+}
+
+#hultUl li a {
+  font: 14px 'brownRegular';
+  letter-spacing: 1px;
+  color: rgb(210, 210, 211);
+  text-transform: uppercase;
+  transition: 0.15s;
+}
+
+#hultUl li a:hover {
+  color: white;
+}
+
+#huLiChangelang {
+  z-index: 99;
+  display: flex;
+  width: 80px;
+  height: 100%;
+}
+
+#hulcButton {
+  z-index: 99;
+  margin: auto;
+  width: 50%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#hulcButton p {
+  z-index: 99;
+  font: 12px 'brownRegular';
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#hulcButton p::after {
+  z-index: 99;
+  position: absolute;
+  top: 68px;
+  right: 30px;
+  content: '›';
+  font: 12px 'machina';
+  color: white;
+  text-transform: uppercase;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+#hLanguages {
+  z-index: 89;
+  position: fixed;
+  top: 145px;
+  right: 5px;
+  display: flex;
+  width: 150px;
+  height: 200px;
+  background-color: #1D1F22;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+#hLanguages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#hLanguages li {
+  display: flex;
+  margin: 15px auto;
+}
+
+#hLanguages li a {
+  font: 11px 'brownRegular';
+  letter-spacing: 1px;
+  color: rgb(210, 210, 211);
+  text-transform: uppercase;
+  transition: 0.15s;
+}
+
+#hLanguages li a:hover {
+  color: white;
+}
+
+/* PARAMETERS */
+/* PARAMETERS */
+/* PARAMETERS */
+/* PARAMETERS */
+/* PARAMETERS */
+
+html, body {
+  background-color: #F4F5FA;
+  height: 7000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  list-style: none;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+a, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "marianneThin";
+  src: url("../fonts/Marianne/Marianne-Thin.woff") format("woff"),
+       url("../fonts/Marianne/Marianne-Thin.woff2") format("woff2"),
+       url("../fonts/Marianne/Marianne-Thin.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "marianneLight";
+  src: url("../fonts/Marianne/Marianne-Light.woff") format("woff"),
+       url("../fonts/Marianne/Marianne-Light.woff2") format("woff2"),
+       url("../fonts/Marianne/Marianne-Light.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "marianneRegular";
+  src: url("../fonts/Marianne/Marianne-Regular.woff") format("woff"),
+       url("../fonts/Marianne/Marianne-Regular.woff2") format("woff2"),
+       url("../fonts/Marianne/Marianne-Regular.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "marianneMedium";
+  src: url("../fonts/Marianne/Marianne-Medium.woff") format("woff"),
+       url("../fonts/Marianne/Marianne-Medium.woff2") format("woff2"),
+       url("../fonts/Marianne/Marianne-Medium.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "marianneBold";
+  src: url("../fonts/Marianne/Marianne-Bold.woff") format("woff"),
+       url("../fonts/Marianne/Marianne-Bold.woff2") format("woff2"),
+       url("../fonts/Marianne/Marianne-Bold.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "marianneExtraBold";
+  src: url("../fonts/Marianne/Marianne-ExtraBold.woff") format("woff"),
+       url("../fonts/Marianne/Marianne-ExtraBold.woff2") format("woff2"),
+       url("../fonts/Marianne/Marianne-ExtraBold.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "machina";
+  src: url("../fonts/machina.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gilroyLight";
+  src: url("../fonts/gilroy/gilroyLight.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gilroyMedium";
+  src: url("../fonts/gilroy/gilroyMedium.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gilroyRegular";
+  src: url("../fonts/gilroy/gilroyRegular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gilroySemibold";
+  src: url("../fonts/gilroy/gilroySemibold.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "brownLight";
+  src: url("../fonts/brownLight.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "brownRegular";
+  src: url("../fonts/brownRegular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+
+/*rgb(255, 192, 23)*/
