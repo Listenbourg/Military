@@ -4,6 +4,11 @@
 /* HEADER */
 /* HEADER */
 /* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
 
 header {
   z-index: 90;
@@ -38,7 +43,7 @@ header {
 
 #huLiTabs {
   display: flex;
-  width: calc(100% - 300px - 100px);
+  width: calc(100% - 300px - 80px);
   height: 100%;
 }
 
@@ -55,15 +60,16 @@ header {
   margin: auto 25px;
 }
 
-#hultUl li a {
+#hultUl li a, #hultUl li p {
   font: 14px 'brownRegular';
   letter-spacing: 1px;
   color: rgb(210, 210, 211);
   text-transform: uppercase;
   transition: 0.15s;
+  cursor: pointer;
 }
 
-#hultUl li a:hover {
+#hultUl li a:hover, #hultUl li p:hover {
   color: white;
 }
 
@@ -75,16 +81,30 @@ header {
 }
 
 #hulcButton {
+  display: flex;
   z-index: 99;
   margin: auto;
-  width: 50%;
+  width: 40%;
   height: 30px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-#hulcButton p {
+#hulcButton ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#hulcButton ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+#hulcButton ul li:first-child {
+  margin: auto;
   z-index: 99;
   font: 12px 'brownRegular';
   letter-spacing: 1px;
@@ -92,45 +112,55 @@ header {
   text-transform: uppercase;
 }
 
-#hulcButton p::after {
+#hulcButton ul li:last-child {
+  margin: auto;
   z-index: 99;
-  position: absolute;
   top: 68px;
   right: 30px;
-  content: '›';
   font: 12px 'machina';
+  line-height: 2.6;
   color: white;
   text-transform: uppercase;
-  transform-origin: 0 0;
-  transform: rotate(90deg);
 }
 
 #hLanguages {
   z-index: 89;
   position: fixed;
+  display: flex;
   top: 145px;
   right: 5px;
-  display: flex;
   width: 150px;
-  height: 200px;
+  height: 0;
   background-color: #1D1F22;
   border-radius: 15px;
   opacity: 0.9;
+  transition: 0.4s;
 }
 
-#hLanguages {
+#hLanguages ul {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.4s;
 }
 
-#hLanguages li {
+#hLanguages ul li {
   display: flex;
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
-#hLanguages li a {
+#hLanguages ul li:first-child {
+  margin: 20px auto 10px auto;
+}
+
+#hLanguages ul li:last-child {
+  margin: 10px auto 20px auto;
+}
+
+#hLanguages ul li a {
   font: 11px 'brownRegular';
   letter-spacing: 1px;
   color: rgb(210, 210, 211);
@@ -142,6 +172,68 @@ header {
   color: white;
 }
 
+#hExp {
+  z-index: 89;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 140px);
+  top: 140px;
+  background-color: #101112;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#heUl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.heuLi, .heuluLi, .heululdUl, .heululdUl li, .heulUl {
+  display: flex;
+  flex-direction: row;
+}
+
+.heuluLi {
+  margin: 20px auto;
+}
+
+.heululDiv {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 125px;
+  background-color: magenta;
+  border: 1px solid #D3A81D;
+}
+
+.heululdUl {
+  width: 100%;
+  height: 100%;
+}
+
+.heululdUl li img {
+  width: 80px;
+  height: 80px;
+}
+
+.heululdUl li p {
+  margin: auto;
+  font: 11px 'brownRegular';
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+/* PARAMETERS */
+/* PARAMETERS */
+/* PARAMETERS */
+/* PARAMETERS */
+/* PARAMETERS */
 /* PARAMETERS */
 /* PARAMETERS */
 /* PARAMETERS */
