@@ -16,7 +16,7 @@ header {
   top: 0;
   width: 100%;
   height: 140px;
-  background-color: #1D1F22;
+  background-color: rgba(29, 31, 34);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -181,14 +181,15 @@ header {
   top: 140px;
   background-color: #101112;
   opacity: 0;
+  pointer-events: none;
   transition: 0.3s;
 }
 
 #heUl {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  height: 580px;
 }
 
 .heuLi, .heuluLi, .heululdUl, .heululdUl li, .heulUl {
@@ -197,16 +198,21 @@ header {
 }
 
 .heuluLi {
-  margin: 20px auto;
+  margin: 10px;
 }
 
 .heululDiv {
   display: flex;
   flex-direction: row;
-  width: 250px;
+  width: 300px;
   height: 125px;
-  background-color: magenta;
-  border: 1px solid #D3A81D;
+  border: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.heululDiv:hover {
+  background-color: rgba(255,255,255,0.1);
 }
 
 .heululdUl {
@@ -214,20 +220,43 @@ header {
   height: 100%;
 }
 
-.heululdUl li img {
-  width: 80px;
-  height: 80px;
+.heululdUl li:first-child {
+  margin: auto 10px auto 20px;
+  width: 70px;
+  height: 70px;
 }
 
-.heululdUl li p {
-  margin: auto;
+.heululdUl li:last-child {
+  margin: auto auto auto 0;
   font: 11px 'brownRegular';
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
 }
 
+#heCloseBtn {
+   position: absolute;
+   display: flex;
+   top: 40px;
+   right: 50px;
+   width: 60px;
+   height: 60px;
+   border: 1px solid rgba(255,255,255,0.1);
+   border-radius: 60px;
+   background-color: transparent;
+   cursor: pointer;
+   transition: 0.2s;
+}
 
+#heCloseBtn:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+#hecbImg {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
 
 /* PARAMETERS */
 /* PARAMETERS */
@@ -241,7 +270,7 @@ header {
 /* PARAMETERS */
 
 html, body {
-  background-color: #F4F5FA;
+  background-color: black;
   height: 7000px;
 }
 

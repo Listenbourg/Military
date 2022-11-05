@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="html">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/index.css">
@@ -9,10 +9,16 @@
   <link rel="shortcut icon" href="../images/icons/logo.png">
   <title>Ministère des Armées</title>
 </head>
-<body>
+<body id="body">
   <?php include('header.php') ?>
   <div id="home">
-
+    <div id="hTitleBg">
+      <p id="htbTitle">Ministère des armées</p>
+    </div>
+    <img id="hBlason" src="../images/blason.png">
+  </div>
+  <div id="section">
+    
   </div>
 </body>
 </html>
